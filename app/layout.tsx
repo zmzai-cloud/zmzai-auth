@@ -18,8 +18,8 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "登录 · zmzai cloud",
-  description: "zmzai cloud 单点登录认证中心",
+  title: "登录 · zmzai.cloud",
+  description: "zmzai.cloud 单点登录认证中心",
 };
 
 export const viewport: Viewport = { themeColor: "#FFFFFF" };

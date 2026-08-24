@@ -42,13 +42,13 @@ export default function VerifyEmailPage({ searchParams }: { searchParams: Promis
       <div className="flex w-full max-w-sm flex-col gap-4 border border-line bg-surface p-8 text-center">
         {state === "verifying" && (
           <>
-            <p className="eyebrow">zmzai cloud · 邮箱验证</p>
+            <p className="eyebrow">zmzai.cloud · 邮箱验证</p>
             <h1 className="headline text-3xl">正在验证…</h1>
           </>
         )}
         {state === "verified" && (
           <>
-            <p className="eyebrow">zmzai cloud · 邮箱验证</p>
+            <p className="eyebrow">zmzai.cloud · 邮箱验证</p>
             <h1 className="headline text-3xl">验证成功</h1>
             <p className="text-sm text-muted">你的邮箱已通过验证，可以登录了。</p>
             <Button onClick={() => { window.location.href = "/login"; }}>去登录</Button>
@@ -56,7 +56,7 @@ export default function VerifyEmailPage({ searchParams }: { searchParams: Promis
         )}
         {state === "error" && (
           <>
-            <p className="eyebrow">zmzai cloud · 邮箱验证</p>
+            <p className="eyebrow">zmzai.cloud · 邮箱验证</p>
             <h1 className="headline text-3xl">验证失败</h1>
             <p className="text-sm text-red-700">{error}</p>
             <Button variant="secondary" onClick={() => { window.location.href = "/login"; }}>返回登录</Button>

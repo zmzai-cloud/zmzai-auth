@@ -33,7 +33,7 @@ export function RegisterForm({ next }: { next: string }) {
   if (sent) {
     return (
       <form className="flex w-full max-w-sm flex-col gap-4 border border-line bg-surface p-8 text-center">
-        <p className="eyebrow">zmzai cloud · 注册</p>
+        <p className="eyebrow">zmzai.cloud · 注册</p>
         <h1 className="headline text-3xl">验证邮件已发送</h1>
         <p className="text-sm text-muted">
           我们已向 <strong>{email}</strong> 发送了验证链接，请打开邮件完成验证后再登录。
@@ -54,7 +54,7 @@ export function RegisterForm({ next }: { next: string }) {
   return (
     <form onSubmit={onSubmit} className="flex w-full max-w-sm flex-col gap-5 border border-line bg-surface p-8">
       <div className="flex flex-col gap-2">
-        <p className="eyebrow">zmzai cloud · 注册</p>
+        <p className="eyebrow">zmzai.cloud · 注册</p>
         <h1 className="headline text-3xl">创建账号</h1>
         <p className="text-sm text-muted">注册一次，zmzai.cloud 全站通用。</p>
       </div>

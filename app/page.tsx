@@ -51,7 +51,7 @@ export default async function HomePage({
 
         {/* Hero — zmzai 逐字母矩阵：我的名字就是产品矩阵 */}
         <h2 className="font-mono font-bold uppercase leading-none tracking-tight">
-          <span className="sr-only">zmzai cloud</span>
+          <span className="sr-only">zmzai.cloud</span>
           <span
             aria-hidden="true"
             className="flex flex-wrap items-end gap-x-6 gap-y-4 text-[clamp(3rem,9vw,6rem)]"
@@ -81,7 +81,7 @@ export default async function HomePage({
 
         <p className="max-w-2xl text-lg leading-9 text-ink/80">
           一次登录，<span className="font-mono text-accent">zmzai</span> 全站通用。
-          牧之知识体系、中转驿、沙箱场、Agent 使与工作台，从同一个入口出发。
+          Muzhi、Relay、Sandbox、Agent 与 WorkOS，从同一个入口出发。
         </p>
       </section>
 

@@ -1,4 +1,4 @@
-# 登录门 · zmzai cloud
+# 登录门 · zmzai.cloud
 
 `auth.zmzai.cloud` 是 ZMZ AI 产品线的单点登录服务。
 
@@ -15,7 +15,7 @@
 
 ## 当前边界
 
-- 注册入口仍由牧之知识体系承接；
+- 注册入口仍由 Muzhi 承接；
 - 账号禁用、角色和 session schema 以共享数据库模型为准；
 - 这是 ZMZ AI 内部 SSO，不是通用身份平台。
 

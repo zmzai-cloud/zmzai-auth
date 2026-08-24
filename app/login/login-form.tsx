@@ -50,7 +50,7 @@ export function LoginForm({ next, error: paramError }: { next: string; error?: s
   return (
     <form onSubmit={onSubmit} className="flex w-full max-w-sm flex-col gap-5 border border-line bg-surface p-8">
       <div className="flex flex-col gap-2">
-        <p className="eyebrow">zmzai cloud · 单点登录</p>
+        <p className="eyebrow">zmzai.cloud · 单点登录</p>
         <h1 className="headline text-3xl">登录牧之的云</h1>
         <p className="text-sm text-muted">
           一次登录，zmzai.cloud 全站通用。
