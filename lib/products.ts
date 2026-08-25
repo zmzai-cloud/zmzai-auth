@@ -1,8 +1,8 @@
 /**
  * zmzai.cloud 产品矩阵 — z·m·z·a·i 逐字母体系。
  * 与 zmzai-cloud/lib/projects.ts 同源（本仓只保留落地页展示所需字段）。
- * 五个字母是「牧之 muzhi」拼音的拆解：每个字母挂一条 AI 产品线，
- * 既是产品索引，又是署名。
+ * 五个字母是「知末智云」拼音首字母与 AI 的合成：每个字母挂一条 AI 产品线，
+ * 既是产品索引，又是品牌拆解。
  */
 
 export type ProductStatus = "live" | "building" | "planned";
