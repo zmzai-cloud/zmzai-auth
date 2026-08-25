@@ -2,7 +2,7 @@
 
 `auth.zmzai.cloud` 是 ZMZ AI 产品线的单点登录服务。
 
-它复用牧之账号体系的用户、session 和 cookie 规则，让 `zmzai.cloud`、`m.zmzai.cloud`、`z.zmzai.cloud`、`a.zmzai.cloud` 等子站共享同一套登录态。
+它复用知末智云账号体系的用户、session 和 cookie 规则，让 `zmzai.cloud`、`m.zmzai.cloud`、`z.zmzai.cloud`、`a.zmzai.cloud` 等子站共享同一套登录态。
 
 ## 职责
 
@@ -55,8 +55,8 @@ pnpm typecheck
 | 变量 | 默认值 | 说明 |
 | --- | --- | --- |
 | `APP_URL` | `http://localhost:3001` | 当前 auth 服务地址 |
-| `MONGODB_URI` | 无 | 与牧之账号体系共用的 MongoDB |
-| `AUTH_SECRET` | 无 | 必须与牧之一致，用于 session token hash |
+| `MONGODB_URI` | 无 | 与知末智云账号体系共用的 MongoDB |
+| `AUTH_SECRET` | 无 | 必须与知末智云一致，用于 session token hash |
 | `SESSION_COOKIE_NAME` | `muzhi_session` | 登录态 cookie 名称 |
 | `SESSION_COOKIE_DOMAIN` | 空 | 多子域共享登录时使用 |
 | `SESSION_TTL_DAYS` | `30` | session 有效天数 |
@@ -65,8 +65,8 @@ pnpm typecheck
 
 ## 相关仓库
 
-- [`zmzai-db`](https://github.com/Ulanxx/zmzai-db)：User、Session、Account schema 的唯一来源；
-- [`muzhi`](https://github.com/Ulanxx/muzhi)：注册和知识产品交付入口；
-- [`zmzai-cloud`](https://github.com/Ulanxx/zmzai-cloud)：产品矩阵主站。
+- [`zmzai-db`](https://github.com/zmzai-cloud/zmzai-db)：User、Session、Account schema 的唯一来源；
+- [`muzhi`](https://github.com/zmzai-cloud/muzhi)：注册和知识产品交付入口；
+- [`zmzai-cloud`](https://github.com/zmzai-cloud/zmzai-cloud)：产品矩阵主站。
 
-Apache-2.0 · 牧之
+Apache-2.0 · 知末智云
