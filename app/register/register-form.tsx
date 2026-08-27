@@ -70,7 +70,7 @@ export function RegisterForm({ next }: { next: string }) {
       </label>
 
       <label className="flex flex-col gap-1.5 text-sm">
-        <span className="text-muted">密码（至少 12 位，含字母和数字）</span>
+        <span className="text-muted">密码（至少 8 位，含字母和数字）</span>
         <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required autoComplete="new-password" placeholder="••••••••••••" />
       </label>
 
