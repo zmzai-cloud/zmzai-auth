@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Logo, Wordmark } from "@zmzai/theme";
+import { BrandLockup } from "@zmzai/theme";
 
 import { allProducts } from "@/lib/products";
 
@@ -21,7 +21,7 @@ export function AuthShell({ children }: { children: ReactNode }) {
     <main className="grid min-h-dvh grid-cols-1 lg:grid-cols-2">
       {/* ═══ 左：墨底叙事区 ═══ */}
       <aside className="hidden flex-col justify-between bg-dark-bg px-10 py-12 lg:flex xl:px-16">
-        <BrandLockup tone="dark" />
+        <BrandLockup tone="dark" sublabel="auth" />
 
         <div className="flex flex-col gap-6 py-16">
           <p className="font-serif text-[2rem] font-bold leading-[1.3] tracking-tight text-dark-ink xl:text-[2.5rem]">
@@ -48,36 +48,11 @@ export function AuthShell({ children }: { children: ReactNode }) {
       <section className="flex flex-col justify-center px-6 py-14 sm:px-12">
         <div className="mx-auto flex w-full max-w-[22rem] flex-col">
           <div className="mb-10 lg:hidden">
-            <BrandLockup tone="light" />
+            <BrandLockup sublabel="auth" />
           </div>
           {children}
         </div>
       </section>
     </main>
-  );
-}
-
-/**
- * 品牌锁标 — Logo + Wordmark + 子标。
- * 墨底用 `inverted` 的云朵标，白底用原色。
- */
-function BrandLockup({ tone }: { tone: "dark" | "light" }) {
-  const dark = tone === "dark";
-  return (
-    <div className="flex items-center gap-2.5">
-      <Logo size={26} inverted={dark} />
-      <Wordmark
-        size={17}
-        weight={600}
-        className={dark ? "text-dark-ink" : "text-ink"}
-      />
-      <span
-        className={`font-mono text-[11px] uppercase tracking-[0.2em] ${
-          dark ? "text-dark-ink/45" : "text-ink-3"
-        }`}
-      >
-        auth
-      </span>
-    </div>
   );
 }
