@@ -59,9 +59,9 @@ export const allProducts: ProductLine[] = [
   },
   {
     id: "codex",
-    name: "Codex",
-    hanzi: "古卷",
-    tagline: "装订成册的记忆中心",
+    name: "Tome",
+    hanzi: "卷帙",
+    tagline: "卷帙——装订成册的长期记忆",
     status: "building",
     href: "https://k.zmzai.cloud",
   },
