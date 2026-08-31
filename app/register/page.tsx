@@ -1,9 +1,9 @@
 import { redirect } from "next/navigation";
 
-import { Logo, Wordmark } from "@zmzai/theme";
 import { getCurrentUser } from "@/providers/auth/session";
 import { safeNext } from "@/providers/auth/redirect";
 
+import { AuthShell } from "../auth-shell";
 import { RegisterForm } from "./register-form";
 
 export const dynamic = "force-dynamic";
@@ -22,12 +22,8 @@ export default async function RegisterPage({
   }
 
   return (
-    <main className="flex min-h-dvh flex-col items-center justify-center gap-10 px-5 py-16">
-      <div className="flex flex-col items-center gap-3">
-        <Logo size={56} />
-        <Wordmark className="text-lg" />
-      </div>
+    <AuthShell>
       <RegisterForm next={next} />
-    </main>
+    </AuthShell>
   );
 }

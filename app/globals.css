@@ -5,9 +5,10 @@
    （否则 Input/Button 等只有默认样式，输入框会"裸奔"） */
 @source "../node_modules/@zmzai/theme/src/**/*.{ts,tsx}";
 
-/* zmzai cloud 牧之 — tokens 统一来自 @zmzai/theme（v0.6.0 起纯白+荧光绿，
-   与 zmzai.cloud 主应用同源），不再内联 @theme 与 @font-face。 */
-
+/*
+ * auth.zmzai.cloud —— tokens 统一来自 @zmzai/theme（墨骨 Ink Frame：
+ * 纯白底 + 墨黑结构 + 衬线标题），本文件只放本站复用的版式类，不内联 token。
+ */
 
 :root {
   color-scheme: light;
@@ -25,7 +26,7 @@
   body {
     min-height: 100dvh;
     margin: 0;
-    background: var(--color-paper);
+    background: var(--color-bg);
     color: var(--color-ink);
     font-family: var(--font-sans);
     font-size: 1rem;
@@ -50,49 +51,26 @@
   }
 }
 
-/* Recurring motif: hard rule line on section open. Left-aligned editorial. */
+/* 左对齐 Editorial 版式：硬分隔线开章节，等宽小标，衬线大标题 */
 @layer components {
   .page-shell {
-    width: min(100% - 2.5rem, 64rem);
+    width: min(100% - 2.5rem, 60rem);
     margin-inline: auto;
-  }
-
-  .rule-top {
-    border-top: 2px solid var(--color-rule);
   }
 
   .eyebrow {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-muted);
+    color: var(--color-ink-3);
   }
 
   .headline {
     font-family: var(--font-serif);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -0.02em;
-  }
-
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--color-accent);
-    color: var(--color-accent-ink);
-    padding: 0.5rem 1rem;
-    border-radius: 0;
-    font-family: var(--font-mono);
-    font-size: 0.8125rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: background var(--animate-dur-base) var(--ease-out);
-  }
-
-  .btn-primary:hover {
-    background: var(--color-accent-strong);
   }
 }
 

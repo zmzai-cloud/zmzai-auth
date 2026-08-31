@@ -1,9 +1,9 @@
 import { redirect } from "next/navigation";
 
-import { Logo, Wordmark } from "@zmzai/theme";
 import { getCurrentUser } from "@/providers/auth/session";
 import { safeNext } from "@/providers/auth/redirect";
 
+import { AuthShell } from "../auth-shell";
 import { LoginForm } from "./login-form";
 
 export const dynamic = "force-dynamic";
@@ -23,12 +23,8 @@ export default async function LoginPage({
   }
 
   return (
-    <main className="flex min-h-dvh flex-col items-center justify-center gap-10 px-5 py-16">
-      <div className="flex flex-col items-center gap-3">
-        <Logo size={56} />
-        <Wordmark className="text-lg" />
-      </div>
+    <AuthShell>
       <LoginForm next={next} error={params.error} />
-    </main>
+    </AuthShell>
   );
 }
