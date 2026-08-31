@@ -39,7 +39,7 @@ export const allProducts: ProductLine[] = [
     hanzi: "执笔者",
     tagline: "Agent 工作台，从对话开始完成真实任务",
     status: "live",
-    href: "https://a.zmzai.cloud",
+    href: "https://agent.zmzai.cloud",
   },
   {
     id: "margin",
@@ -47,7 +47,7 @@ export const allProducts: ProductLine[] = [
     hanzi: "页边",
     tagline: "页边通道——模型与 API 的中继",
     status: "live",
-    href: "https://m.zmzai.cloud",
+    href: "https://relay.zmzai.cloud",
   },
   {
     id: "plate",
@@ -55,7 +55,7 @@ export const allProducts: ProductLine[] = [
     hanzi: "印版",
     tagline: "隔离试跑的代码沙箱，跑完即焚",
     status: "building",
-    href: "https://z.zmzai.cloud",
+    href: "https://sandbox.zmzai.cloud",
   },
   {
     id: "codex",
@@ -63,7 +63,7 @@ export const allProducts: ProductLine[] = [
     hanzi: "卷帙",
     tagline: "卷帙——装订成册的长期记忆",
     status: "building",
-    href: "https://k.zmzai.cloud",
+    href: "https://memory.zmzai.cloud",
   },
   {
     id: "colophon",
@@ -79,7 +79,7 @@ export const allProducts: ProductLine[] = [
     hanzi: "目录",
     tagline: "今日视图与收件箱",
     status: "planned",
-    href: "https://i.zmzai.cloud",
+    href: "https://workos.zmzai.cloud",
   },
   {
     id: "muzhi",
